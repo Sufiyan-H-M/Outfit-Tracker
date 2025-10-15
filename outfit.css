@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+
+}
+
+button {
+  background-color: #0dc600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+button:hover {
+  background-color: #0e9a04;
+}
+
+.outfit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.outfit-card {
+  background: #fafafa;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.outfit-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.outfit-card button {
+  margin-top: 5px;
+  background-color: red;
+}
+
+.outfit-card button:hover {
+  background-color: darkred;
+}
+
+.casual { border: 2px solid green; }
+.formal { border: 2px solid rgb(153, 0, 255); }
+.sport { border: 2px solid rgb(0, 238, 255); }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfit Tracker</title>
+  <link rel="stylesheet" href="outfit.css">
+  <link rel="icon" href="logo.png" style="border-radius: 200px;">
+</head>
+<body>
+  <div class="container">
+    <h1>Outfit Tracker</h1>
+
+    <form id="outfitForm">
+      <input type="text" id="outfitName" placeholder="Outfit Name, Ex: black T-shirt, white pants" required>
+      
+      <input type="url" id="outfitImage" placeholder="Image URL" required>
+      <div>
+    <label><input type="radio" name="OutfitCategory" value="Casual" required> Casual</label><br>
+    <label><input type="radio" name="OutfitCategory" value="Formal"> Formal</label><br>
+    <label><input type="radio" name="OutfitCategory" value="Sport"> Sport</label>
+       </div>
+      <button type="submit">Add Outfit</button>
+    </form>
+
+    <h2>My Outfits</h2>
+    <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="Casual">Casual</option>
+        <option value="Formal">Formal</option>
+        <option value="Sport">Sport</option>
+    </select>
+
+    <div id="outfitList" class="outfit-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
