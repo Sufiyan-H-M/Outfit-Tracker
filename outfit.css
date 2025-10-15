@@ -8,14 +8,18 @@ body {
 .container {
   max-width: 600px;
   margin: auto;
-  background: #fff;
+  background: rgb(165, 208, 251);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgb(70 129 137);
 }
 
 h1, h2 {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #3c2d2d;
 }
 
 form {
@@ -24,14 +28,15 @@ form {
   gap: 10px;
 }
 
-input, button {
+button {
   padding: 10px;
   font-size: 16px;
 
 }
 
+
 button {
-  background-color: #0dc600;
+  background-color: #4782fa;
   color: white;
   border: none;
   cursor: pointer;
@@ -41,7 +46,7 @@ button {
 }
 
 button:hover {
-  background-color: #0e9a04;
+  background-color: #2469f4;
 }
 
 .outfit-list {
@@ -53,7 +58,6 @@ button:hover {
 
 .outfit-card {
   background: #fafafa;
-  border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
@@ -73,6 +77,67 @@ button:hover {
   background-color: darkred;
 }
 
-.casual { border: 2px solid green; }
-.formal { border: 2px solid rgb(153, 0, 255); }
-.sport { border: 2px solid rgb(0, 238, 255); }
+.casual { background-color: rgb(161, 247, 161); }
+.formal { background-color: rgb(208, 152, 244);  }
+.sport { background-color: rgb(221, 238, 155);  }
+
+#outfitImage{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#categoryFilter{
+  background-color: rgb(203, 242, 238);
+  padding: 10px 10px;
+  border-radius: 17px;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+#question1{
+  color: #000000;
+
+}
+
+#outfitName{
+  color: black;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(203, 242, 238);
+  margin-top: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#CategoryContainer{
+  background-color: rgb(203, 242, 238);;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+#CategoryContainer{
+  background-color: rgb(203, 242, 238);
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#myOutfits{
+  background-color: rgb(165, 208, 251);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#outfitDate{
+  background-color: rgb(203, 242, 238);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  font-size: 34px;
+}
